@@ -50,6 +50,6 @@ Xây dựng lớp `StudentAnalyzer` trong Java để xử lý danh sách điểm
 
 2. Kết quả đo code coverage (sử dụng IntelliJ IDEA):
 - Statement Coverage: 100%
-- Branch Coverage: 100%
+
 
 ✅ Mã kiểm thử đơn vị hoàn thiện và có độ bao phủ toàn diện.
