@@ -40,3 +40,16 @@ Xây dựng lớp `StudentAnalyzer` trong Java để xử lý danh sách điểm
 - Họ tên: Nguyễn Phương Thảo
 - MSSV: BIT220144
 - Lớp: 22IT-SE2
+
+## Đánh giá độ bao phủ mã kiểm thử
+1. Đã phát hiện và xử lý 4 vấn đề:
+- Issue #1: Xử lý null input.
+- Issue #2: Bổ sung kiểm thử giá trị cận (precision).
+- Issue #3: Đo và ghi nhận coverage vào README.md.
+- Issue #4: Cải tiến đặt tên và tách nhỏ kiểm thử.
+
+2. Kết quả đo code coverage (sử dụng IntelliJ IDEA):
+- Statement Coverage: 100%
+- Branch Coverage: 100%
+
+✅ Mã kiểm thử đơn vị hoàn thiện và có độ bao phủ toàn diện.
