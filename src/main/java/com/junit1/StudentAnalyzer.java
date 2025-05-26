@@ -10,6 +10,7 @@ public class StudentAnalyzer {
      * - Bỏ qua điểm âm hoặc lớn hơn 10 (coi là dữ liệu sai)
      * - Nếu danh sách rỗng, trả về 0
      */
+    // Đếm số lượng sinh viên có điểm từ 8.0 đến 10.0 (điểm giỏi)
     public int countExcellentStudents(List<Double> scores) {
         if (scores == null || scores.isEmpty()) {
             return 0;
@@ -17,35 +18,14 @@ public class StudentAnalyzer {
 
         int count = 0;
         for (Double score : scores) {
-            if (score != null && score >= 8.0 && score <= 10.0) {
+            if (score != null && score >= 0 && score <= 10 && score >= 8) {
                 count++;
             }
         }
         return count;
     }
 
-    /**
-     * Tính điểm trung bình hợp lệ (từ 0 đến 10)
-     * @param scores danh sách điểm
-     * @return điểm trung bình của các điểm hợp lệ
-     */
-    public double calculateValidAverage(List<Double> scores) {
-        if (scores == null || scores.isEmpty()) {
-            return 0.0;
-        }
 
-        double sum = 0.0;
-        int validCount = 0;
-
-        for (Double score : scores) {
-            if (score != null && score >= 0.0 && score <= 10.0) {
-                sum += score;
-                validCount++;
-            }
-        }
-
-        return validCount > 0 ? sum / validCount : 0.0;
-    }
 
 
 
